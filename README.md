@@ -9,6 +9,55 @@ The ultimate cyberpunk terminal — cybersecurity arsenal, retro gaming, secure 
 ![Emulators](https://img.shields.io/badge/4RC4D3-12%20emulators-ff6600?style=flat-square)
 ![Themes](https://img.shields.io/badge/CU5T0M1Z3-15%20themes-ff00ff?style=flat-square)
 
+## What's New — Standalone macOS Suite
+
+**11 standalone macOS apps** — each module is now a completely independent `.app` bundle with its own dock icon, menu bar, and window. Launch individually or use the **Main Menu** tray app to manage them all.
+
+| App | Bundle Name | What It Does |
+|-----|-------------|--------------|
+| **Main Menu** | `R0GU3-MainMenu.app` | Menu bar tray launcher for all apps |
+| **T3rM1NaL** | `R0GU3-Terminal.app` | 150+ cybersecurity tools, /Void arsenal |
+| **4RC4D3** | `R0GU3-Arcade.app` | 12 emulators, 72 ROMs, synthwave grid |
+| **BR0WS3RQU3ST** | `R0GU3-BrowserQuest.app` | BrowserQuest MMORPG server panel |
+| **BL3SSSCORD** | `R0GU3-Discord.app` | Discord integration with channels |
+| **B1TCH4T** | `R0GU3-Bitchat.app` | P2P encrypted messaging |
+| **T45KM4N4G3R** | `R0GU3-TaskManager.app` | Live process monitor |
+| **R3P41R** | `R0GU3-Repair.app` | System integrity scanner + auto-repair |
+| **CU5T0M1Z3** | `R0GU3-Customize.app` | 15 historical terminal themes + builder |
+| **CR3D1T5** | `R0GU3-Credits.app` | Pulp Fiction quote, team roster, lore |
+
+### macOS Suite Install
+
+```bash
+# Download the suite
+curl -L -o R0GU3-Suite.zip https://github.com/r3dtr0/R0GU3-Command-Center/releases/download/v6.0.0/R0GU3-Suite-v6.0.0-macOS.zip
+
+# Unzip and move to Applications
+unzip R0GU3-Suite.zip
+mv R0GU3-Suite/*.app /Applications/
+
+# Launch the Main Menu (tray icon in your menu bar)
+open /Applications/R0GU3-MainMenu.app
+```
+
+Each app boots **directly** into its module — no hub, no navigation, just pure focused power.
+
+---
+
+## Unified App (All-in-One)
+
+Prefer everything in one window? The unified app includes all 10 modules with a sidebar navigator:
+
+```bash
+# Open in browser (no install)
+open R0GU3-Command-Center-Standalone.html
+
+# Or build the Electron desktop app
+npm install && npm start
+```
+
+---
+
 ## Features
 
 | Module | Description |
@@ -31,15 +80,10 @@ The ultimate cyberpunk terminal — cybersecurity arsenal, retro gaming, secure 
 
 Rogue Classic (2024) | VT100 (1978) | IBM 3270 (1971) | Commodore 64 (1982) | Apple II (1977) | Amiga Workbench (1985) | MS-DOS (1981) | BBS Era (1980s) | The Matrix (1999) | Cyberpunk 2077 (2020) | Fallout Pip-Boy (1997) | TRON Legacy (2010) | Blade Runner (1982) | Sakura Night
 
-## Quick Start
+## Quick Start — Unified App
 
 ### Standalone (No Install)
 Open `R0GU3-Command-Center-Standalone.html` in any browser.
-
-### Desktop App (Electron)
-```bash
-npm install && npm start
-```
 
 ### Build Installers
 ```bash
@@ -47,11 +91,6 @@ npm run build:win    # Windows .exe
 npm run build:mac    # macOS .dmg
 npm run build:linux  # Linux AppImage
 npm run build:all    # All platforms
-```
-
-### One-Line Install
-```bash
-curl -fsSL https://raw.githubusercontent.com/r3dtr0/R0GU3-Command-Center/main/install.sh | bash
 ```
 
 ## Cybersecurity Arsenal (/Void)
